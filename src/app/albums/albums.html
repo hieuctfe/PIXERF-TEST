@@ -1,0 +1,6 @@
+<div class="albums-container">
+  <div ng-if="vm.items.length" class="item-container" ng-repeat="item in vm.items track by item.id" >
+    <item item="item"></item>
+  </div>
+  <div ng-if="!vm.items.length" class="message-box">Have not any image voted yet... ^^!</div>
+</div>

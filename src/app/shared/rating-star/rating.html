@@ -1,0 +1,9 @@
+<div class="rating-star">
+  <div class="stars">
+    <input ng-repeat-start="index in vm.getNumber() track by $index" 
+    type="radio" id="{{vm.random}}star{{$index + 1}}" name="stars{{vm.random}}"
+    ng-value="vm.numberOfStar - $index"
+    ng-change="watchChange()" ng-model="star.value" />
+    <label ng-repeat-end="" for="{{vm.random}}star{{$index + 1}}" title="{{$index + 1}} Star"></label>
+  </div>
+</div>

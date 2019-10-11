@@ -1,0 +1,35 @@
+.nav-bar-container {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    background: black;
+    a {
+        $nav-padding-element: 15px;
+        margin-right: $nav-padding-element;
+        position: relative;
+        color: white!important;
+        text-decoration: none;
+        &::after {
+            content: '';
+            height: 2px;
+            background: white;
+            position: absolute;
+            bottom: -2px;
+            left: 0px;
+            width: 0px;
+            transition: .4s;
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+        a:last-child {
+            margin-right: 0px;
+        }
+    }
+}

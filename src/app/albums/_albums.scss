@@ -1,0 +1,27 @@
+
+.albums-container {
+    display: flex;
+    flex-wrap: wrap;
+    .message-box {
+        margin: auto;
+        font-size: 30px;
+    }
+    .item-container {
+        padding: 3px;
+        overflow: hidden;
+    }
+    // @param $screen: pixel of screen
+    // @param $number: percent of image
+    // @param $height: height of image in pixel
+    @mixin mixin_name($screen, $number, $height) {
+        @media screen and (min-width: $screen) {
+            .item-container {
+                flex: 1 1 $number;
+                height: $height;
+            }
+        }
+    }
+    @include mixin_name(480px,100%, 300px);
+    @include mixin_name(768px,32.333%,200px);
+    @include mixin_name(1024px,19%, 200px);
+}

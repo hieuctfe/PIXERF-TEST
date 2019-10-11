@@ -1,0 +1,23 @@
+{
+  "name": "PIXERF-TEST",
+  "version": "1.0.0",
+  "description": "PIXERF PTE LTD test",
+  "main": "index.js",
+  "author": "Cao Trung Hieu (hieuctfe@gmail.com)",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-ui-router": "^1.0.18"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2",
+    "run-sequence": "^2.2.1"
+  }
+}

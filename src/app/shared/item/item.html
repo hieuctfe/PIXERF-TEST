@@ -1,0 +1,12 @@
+<div class="item">
+  <div class="image-overlay">
+      <div class="image-info">
+          <div>{{vm.item.name}}</div>
+          <div class="rating">
+              <rating ng-if="vm.reset" star="vm.item.star"></rating>
+          </div>
+          <div ng-if="vm.item.star" ng-click="vm.unVote()">Unvote</div>
+      </div>    
+  </div>
+  <img ng-src="{{apiBase + vm.item.image}}"/>
+</div>
