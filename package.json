@@ -9,7 +9,7 @@
     "start": "gulp"
   },
   "dependencies": {
-    "angular": "^1.7.2",
+    "angular": "^1.7.9",
     "angular-ui-router": "^1.0.18"
   },
   "devDependencies": {
